@@ -1,0 +1,17 @@
+.Container {
+    background-color: rgb(6, 172, 1);
+    min-height: 100%;
+    padding: 3% 10%;
+}
+.FormSet{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10%;
+    label{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 1% 5px;
+    }
+}
