@@ -4,10 +4,12 @@ import Settings from "./MainPageSetSettings";
 
 
 
-function MainPageContainer() {
+function MainPageContainer(props) {
+    const {DarkMode,setDarkMode}=props
     const [isErrors,setIsErrors]=useState(false)
+    console.log(isErrors);
     return(
-        <main className={s.Container}>
+        <main className={DarkMode?s.Container+" DarkMode":s.Container}>
             <h1>Select game settings</h1>
             <Settings isErrors={isErrors} setIsErrors={setIsErrors}/>
         </main>
