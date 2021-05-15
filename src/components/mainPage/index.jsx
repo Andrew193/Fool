@@ -2,10 +2,11 @@
 
 
 
-function MainPage() {
+function MainPageContainer() {
     return(
-        <>
-        </>
+        <main>
+
+        </main>
     )
 }
-export default MainPage;
+export default MainPageContainer;
