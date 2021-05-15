@@ -1,3 +1,4 @@
+
 import { Route, Switch } from 'react-router';
 import './App.css';
 import MainPage from "./components/mainPage/index"
