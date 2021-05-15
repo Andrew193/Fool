@@ -19,3 +19,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.DarkMode{
+  background-color: rgb(27, 26, 26)!important;
+  color: white;
+}
