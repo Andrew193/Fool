@@ -1,13 +1,13 @@
 
 import { Route, Switch } from 'react-router';
 import './App.css';
-import MainPage from "./components/mainPage/index"
+import MainPageContainer from "./components/mainPage/index"
 function App() {
   return (
     <div className="App">
      <Switch>
        <Route path="/">
-         <MainPage />
+         <MainPageContainer />
        </Route>
      </Switch>
     </div>
