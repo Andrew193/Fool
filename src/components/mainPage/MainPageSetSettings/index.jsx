@@ -3,7 +3,11 @@ import Script from "./validator"
 function Settings(props) {
     const { isErrors, setIsErrors, setDarkMode } = props;
     return (
-        <form className={s.FormSet}>
+        <form className={s.FormSet} onSubmit={(e)=>{
+            e.preventDefault()
+            console.log(e.target.elements.Gtype.value)
+            console.log(e.target.elements.mode.value)
+            console.log(e.target.elements.times.value);}}>
             <label htmlFor={"times"}>
                 <span>Duration of the game</span>
                 <input id={"times"} type={"number"} onBlur={(e) => Script.Updater(setIsErrors, Script.Validator(e.target.value))} />
@@ -26,6 +30,7 @@ function Settings(props) {
             <label htmlFor={"gameMode"} className={s.gameMode}>
                 <input type={"radio"} value={"false"} name={"mode"} onClick={() => { setDarkMode(false) }} /><span>Light Mode</span>
             </label>
+            <button type="submit">Play</button>
         </form>
     )
 }
