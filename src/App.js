@@ -1,20 +1,17 @@
 
 import { useState } from 'react';
-import { Route, Switch } from 'react-router';
+import { Route } from 'react-router';
 import './App.css';
+import Deck from './components/deck';
 import MainPageContainer from "./components/mainPage/index"
 function App() {
-  const[DarkMode,setDarkMode]=useState(true);
+  const [DarkMode, setDarkMode] = useState(true);
   return (
     <div className="App">
-     <Switch>
-       <Route path="/">
-         <MainPageContainer DarkMode={DarkMode} setDarkMode={setDarkMode}/>
-       </Route>
-       <Route path="/deck">
-         
-       </Route>
-     </Switch>
+        <Route exact path="/" render={() => <MainPageContainer DarkMode={DarkMode} setDarkMode={setDarkMode} />}></Route>
+        <Route exact path="/game" render={(props) =>{
+        console.log(props);
+        <Deck {...props.location.state} />}}></Route>
     </div>
   );
 }
