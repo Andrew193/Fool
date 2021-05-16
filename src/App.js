@@ -4,12 +4,12 @@ import { Route, Switch } from 'react-router';
 import './App.css';
 import MainPageContainer from "./components/mainPage/index"
 function App() {
-  const[DarkMode,setDarlMode]=useState(true);
+  const[DarkMode,setDarkMode]=useState(true);
   return (
     <div className="App">
      <Switch>
        <Route path="/">
-         <MainPageContainer DarkMode={DarkMode} setDarlMode={setDarlMode}/>
+         <MainPageContainer DarkMode={DarkMode} setDarkMode={setDarkMode}/>
        </Route>
      </Switch>
     </div>
