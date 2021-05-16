@@ -11,7 +11,7 @@ function MainPageContainer(props) {
     return(
         <main className={DarkMode?s.Container+" DarkMode":s.Container}>
             <h1>Select game settings</h1>
-            <Settings isErrors={isErrors} setIsErrors={setIsErrors}/>
+            <Settings isErrors={isErrors} setIsErrors={setIsErrors} setDarkMode={setDarkMode}/>
         </main>
     )
 }
