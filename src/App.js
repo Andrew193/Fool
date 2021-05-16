@@ -11,6 +11,9 @@ function App() {
        <Route path="/">
          <MainPageContainer DarkMode={DarkMode} setDarkMode={setDarkMode}/>
        </Route>
+       <Route path="/deck">
+         
+       </Route>
      </Switch>
     </div>
   );
