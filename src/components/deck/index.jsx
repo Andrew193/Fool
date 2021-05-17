@@ -1,21 +1,12 @@
-import { useEffect, useState } from "react";
-import makeDeck from "./deck"
+import Counter from "./counter";
+import Game from "./game";
 
 
 function Deck(props) {
-    let [counter, setCounter] = useState(+props.state[1])
-    const deck = makeDeck(+props.state[0]/4,+props.state[0])
-    // useEffect(() => {
-    //     if (counter > 0) {
-    //         const id = setInterval(() => {
-    //             setCounter((r) => r - 1)
-    //             clearInterval(id)
-    //         }, 1000)
-    //     }
-    // })
     return (
         <main>
-            <h1>You have {(counter / 60).toFixed(1)} minutes to play</h1>
+            <Counter counter={+props.state[1]}/>
+            <Game size={props.state[0]/4} />
         </main>
     )
 }
