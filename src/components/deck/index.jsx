@@ -1,16 +1,13 @@
-import { useEffect } from "react";
-
+import Counter from "./counter";
+import Game from "./game";
 
 
 function Deck(props) {
-    let {times,Gmode}=props;
-    const deck=new Array(Gmode)
-    useEffect(()=>{
-       times>0? (times-=1):alert("That is all")
-    },[times])
-    return(
+    return (
         <main>
-            <h1>{times}</h1>
+            <Counter counter={+props.state[1]}/>
+            <Game size={props.state[0]/4} />
         </main>
     )
 }
+export default Deck;
