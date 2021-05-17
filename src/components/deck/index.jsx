@@ -1,17 +1,21 @@
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import makeDeck from "./deck"
 
 
 function Deck(props) {
-    let {times,Gmode}=props;
-    console.log(times,Gmode,"fds");
-    const deck=new Array(Gmode)
-    // useEffect(()=>{
-    //    times>0? (times-=1):alert("That is all")
-    // },[times])
-    return(
+    let [counter, setCounter] = useState(+props.state[1])
+    const deck = makeDeck(+props.state[0]/4,+props.state[0])
+    // useEffect(() => {
+    //     if (counter > 0) {
+    //         const id = setInterval(() => {
+    //             setCounter((r) => r - 1)
+    //             clearInterval(id)
+    //         }, 1000)
+    //     }
+    // })
+    return (
         <main>
-            <h1>{times}</h1>
+            <h1>You have {(counter / 60).toFixed(1)} minutes to play</h1>
         </main>
     )
 }
