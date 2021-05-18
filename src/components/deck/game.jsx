@@ -1,14 +1,16 @@
-
+import s from "./index.module.scss"
 import { useEffect, useState } from "react";
-import makeDeck from "./deck"
+import Script from "./deck"
+import MakeDeck from "./makeCards";
 function Game(props) {
     const [deck,setDeck]=useState([])
     useEffect(()=>{
-        setDeck(makeDeck(props.size))
-    },[])
+        setDeck(Script.makeDeck(props.size||9))
+    },[props.size])
+    console.log(deck);
     return(
-        <div>
-
+        <div className={s.GamePlace}>
+            <MakeDeck deck={deck} setFlag={props.setFlag} setSelected={props.setSelected}/>
         </div>
     )
 }
