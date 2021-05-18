@@ -7,14 +7,14 @@ function makeDeck(size) {
         deck.push({ v: 6 + i, m: "b" })
         deck.push({ v: 6 + i, m: "c" })
     }
-    return deck.sort(() => 0.5 - Math.random())
+    return deck.sort(() => 0.5 - Math.random());
 }
 function makeR(e, s, setFlag, setSelected) {
     const event = e.currentTarget;
     event.children[0].children[0].classList.add(s.r180);
     event.children[0].children[1].classList.add(s.r360);
-    setFlag((prev) => prev + 1)
-    setSelected((prev) => [...prev, event])
+    setFlag((prev) => prev + 1);
+    setSelected((prev) => [...prev, event]);
 }
 function checkVictory(selected, setScore, setCardsCount, s) {
     debugger
