@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/flip-flop/static/css/main.10146e4a.chunk.css",
+    "main.js": "/flip-flop/static/js/main.d79933a2.chunk.js",
+    "main.js.map": "/flip-flop/static/js/main.d79933a2.chunk.js.map",
+    "runtime-main.js": "/flip-flop/static/js/runtime-main.f0dd964c.js",
+    "runtime-main.js.map": "/flip-flop/static/js/runtime-main.f0dd964c.js.map",
+    "static/js/2.6dd9bad6.chunk.js": "/flip-flop/static/js/2.6dd9bad6.chunk.js",
+    "static/js/2.6dd9bad6.chunk.js.map": "/flip-flop/static/js/2.6dd9bad6.chunk.js.map",
+    "static/js/3.40ff5faf.chunk.js": "/flip-flop/static/js/3.40ff5faf.chunk.js",
+    "static/js/3.40ff5faf.chunk.js.map": "/flip-flop/static/js/3.40ff5faf.chunk.js.map",
+    "index.html": "/flip-flop/index.html",
+    "static/css/main.10146e4a.chunk.css.map": "/flip-flop/static/css/main.10146e4a.chunk.css.map",
+    "static/js/2.6dd9bad6.chunk.js.LICENSE.txt": "/flip-flop/static/js/2.6dd9bad6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0dd964c.js",
+    "static/js/2.6dd9bad6.chunk.js",
+    "static/css/main.10146e4a.chunk.css",
+    "static/js/main.d79933a2.chunk.js"
+  ]
+}
