@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
         <Route exact path="/" render={() => <MainPageContainer DarkMode={DarkMode} setDarkMode={setDarkMode} />}></Route>
-        <Route exact path="/game" render={(props) => <Deck state={props.location.state} />}></Route>
+        <Route exact path="/game" render={(props) => <Deck DarkMode={DarkMode} state={props.location.state} />}></Route>
     </div>
   );
 }
