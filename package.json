@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "15.14.0"
+  },
   "homepage": "",
   "name": "fool",
   "version": "0.1.0",
