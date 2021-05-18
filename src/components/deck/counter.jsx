@@ -11,7 +11,7 @@ function Counter(props) {
         }
     })
     return(
-        <h1>You have {(counter / 60).toFixed(1)} minutes to win</h1>
+        <h1>You have {(counter / 60).toFixed(1)} to win</h1>
     )
 }
 
