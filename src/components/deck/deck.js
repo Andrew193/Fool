@@ -56,4 +56,4 @@ function getMult(value, predictor) {
             return value;
     }
 }
-module.exports = { makeDeck: makeDeck, makeR: makeR, checkVictory: checkVictory, getMult: getMult }
+export default{ makeDeck: makeDeck, makeR: makeR, checkVictory: checkVictory, getMult: getMult }
